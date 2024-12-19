@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio src="file/mixkit-office-telephone-ring-1350.wav" id="audio_file"></audio>
+    <!-- chats -->
+    <div class="home">
+        <div class="home-nav">
+            <div class="logo">Whatsapp</div>
+            <div class="home-nav-icon-main">
+                <div class="home-nav-icon" onclick=""><i class="fa-solid fa-camera"></i></div>
+                <div class="home-nav-icon" onclick="chat_searchToggle()"><i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="home-nav-icon" onclick="chat_moretoggle()"><i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+        </div>
+        <div class="chat-search">
+            <div class="chat-search-top">
+                <div class="chat-search-backicon" onclick="chat_searchToggle()"><i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <input type="search" placeholder="search....">
+            </div>
+            <div class="chat-seearch-down">
+                <div class="search-iteam"><i class="fa-regular fa-envelope"></i> Unread</div>
+                <div class="search-iteam"><i class="fa-regular fa-image"></i> Photo</div>
+                <div class="search-iteam"><i class="fa-solid fa-video"></i> Video</div>
+                <div class="search-iteam"><i class="fa-solid fa-link"></i> Link</div>
+                <div class="search-iteam">Gif</div>
+                <div class="search-iteam"><i class="fa-solid fa-headphones"></i> Audio</div>
+                <div class="search-iteam"><i class="fa-solid fa-file-lines"></i> Document</div>
+                <div class="search-iteam"><i class="fa-solid fa-chart-simple"></i> Poll</div>
+            </div>
+        </div>
+        <div class="chat-more">
+            <div class="chat-contant-main">
+                <div class="chat-contant" onclick="chat_moretoggle()">New Group</div>
+                <div class="chat-contant" onclick="chat_moretoggle()">New Boarcast</div>
+                <div class="chat-contant" onclick="chat_moretoggle()">Link Device</div>
+                <div class="chat-contant" onclick="chat_moretoggle()">Starred Massages</div>
+                <div class="chat-contant" onclick="chat_moretoggle()">Payment</div>
+                <div class="chat-contant" onclick="chat_moretoggle()">Settings</div>
+                <div class="chat-contant" onclick="chat_moretoggle()">Switch accounts</div>
+            </div>
+        </div>
+        <div class="add-btn" onclick="contact_list_toggle()"><i class="fa-solid fa-plus"></i></div>
+        <div class="main1">
+            <div class="main-div">
+                <div class="main-div-left">
+                    <div class="rk-pic"><img src="file/rk-creation.png" alt=""></div>
+                </div>
+                <div class="main-div-right">
+                    <div class="main-div-right-top">
+                        <h3>Raja Yadav (You)</h3>
+                        <span>yesterday</span>
+                    </div>
+                    <div class="main-div-right-down">
+                        <span></span>
+                        <p> This clone was created by raja yadav...</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main-div">
+                <div class="main-div-left">
+                    <div class="rk-pic"><img src="file/face logo.png" alt=""></div>
+                </div>
+                <div class="main-div-right">
+                    <div class="main-div-right-top">
+                        <h3>Jigari</h3>
+                        <span>10:35 PM</span>
+                    </div>
+                    <div class="main-div-right-down">
+                        <span></span>
+                        <p> This clone was created by raja yadav...</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main-div">
+                <div class="main-div-left">
+                    <div class="rk-pic"><img src="file/face logo.png" alt=""></div>
+                </div>
+                <div class="main-div-right">
+                    <div class="main-div-right-top">
+                        <h3>Bhai</h3>
+                        <span>online</span>
+                    </div>
+                    <div class="main-div-right-down">
+                        <span></span>
+                        <p> This clone was created by raja yadav...</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main-div">
+                <div class="main-div-left">
+                    <div class="rk-pic"><img src="file/face one.png" alt=""></div>
+                </div>
+                <div class="main-div-right">
+                    <div class="main-div-right-top">
+                        <h3>mahi </h3>
+                        <span>6 day ago</span>
+                    </div>
+                    <div class="main-div-right-down">
+                        <span></span>
+                        <p> This clone was created by raja yadav...</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main-div">
+                <div class="main-div-left">
+                    <div class="rk-pic"><img src="file/face.png" alt=""></div>
+                </div>
+                <div class="main-div-right">
+                    <div class="main-div-right-top">
+                        <h3>best Friend</h3>
+                        <span>yesterday</span>
+                    </div>
+                    <div class="main-div-right-down">
+                        <span></span>
+                        <p> This clone was created by raja yadav...</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main-div">
+                <div class="main-div-left">
+                    <div class="rk-pic"><img src="file/mystery face.png" alt=""></div>
+                </div>
+                <div class="main-div-right">
+                    <div class="main-div-right-top">
+                        <h3>Masti Group</h3>
+                        <span>3 mint ago</span>
+                    </div>
+                    <div class="main-div-right-down">
+                        <span></span>
+                        <p> This clone was created by raja yadav...</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main-div">
+                <div class="main-div-left">
+                    <div class="rk-pic"><img src="file/face logo.png" alt=""></div>
+                </div>
+                <div class="main-div-right">
+                    <div class="main-div-right-top">
+                        <h3>Family Group</h3>
+                        <span>02:00 PM </span>
+                    </div>
+                    <div class="main-div-right-down">
+                        <span></span>
+                        <p> This clone was created by raja yadav...</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main-div">
+                <div class="main-div-left">
+                    <div class="rk-pic"><img src="file/face logo.png" alt=""></div>
+                </div>
+                <div class="main-div-right">
+                    <div class="main-div-right-top">
+                        <h3>Cultaror Group</h3>
+                        <span>07:00 AM </span>
+                    </div>
+                    <div class="main-div-right-down">
+                        <span></span>
+                        <p> This clone was created by raja yadav...</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- chats page and contact list  -->
+
+     <div class="chat-page">
+        <div class="chat-page-nav">
+            <div class="chat-page-icon" onclick="back_on()"><i class="fa-solid fa-arrow-left"></i></div>
+            <div id="chat-page-logo"><img src="file/rk-creation.png" alt=""></div>
+            <div id="chat-page-name">raja yadav</div>
+            <div class="chat-page-icon"><i class="fa-solid fa-video"></i></div>
+            <div class="chat-page-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="chat-page-icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        </div>
+        <div class="chat-page-button">
+            <div class="chat-page-down-left">
+                <div class="c-p-d-l"><i class="fa-regular fa-face-smile"></i></div>
+                <input type="text" placeholder="Message">
+                <div class="c-p-d-l"><i class="fa-solid fa-link"></i></div>
+                <div class="c-p-d-l"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                <div class="c-p-d-l"><i class="fa-solid fa-camera"></i></div>
+            </div>
+            <div class="chat-page-down-right"><i class="fa-solid fa-microphone"></i></div>
+        </div>
+    </div>
+    <div class="contact-list">
+        <div class="contact-list-nav">
+            <div class="chat-page-icon" onclick="contact_list_toggle()"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="contact-list-name">
+            <div class="contact-list-name-up">select Contact</div>
+            <div class="contact-list-name-down">8 contacts</div>
+            </div>
+            <div class="chat-page-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="chat-page-icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+        </div>
+        <div class="contact-section">
+            <div class="contact-logo"><i class="fa-solid fa-user-group"></i></div>
+            <div class="contact-name">New Group</div>
+        </div>
+        <div class="contact-section">
+            <div class="contact-logo"><i class="fa-solid fa-user-plus"></i></div>
+            <div class="contact-name">New Contact</div>
+        </div>
+        <div class="contact-section">
+            <div class="contact-logo"><i class="fa-solid fa-user-group"></i></div>
+            <div class="contact-name">New Community</div>
+        </div>
+        <div class="contact-whats">Contact on Whatsapp</div>
+        <div class="contact-section">
+            <div class="contact-logo">
+                <div class="rk-pic"><img src="file/rk-creation.png" alt=""></div>
+            </div>
+            <div class="contact-name" onclick="contact_raja()">
+                <div class="contact-name-up">Raja (You)</div>
+                <div class="contact-name-down">Massage yourself</div>
+            </div>
+        </div>
+        <div class="contact-section">
+            <div class="contact-logo papa-pic"></div>
+            <div class="contact-name" onclick="contact_papa()">
+                <div class="contact-name-up">papa</div>
+                <div class="contact-name-down">hey i am on Whatsapp</div>
+            </div>
+        </div>
+        <div class="contact-section">
+            <div class="contact-logo">
+                <div class="rk-pic"><img src="file/ram ji.jpg" alt=""></div></div>
+            <div class="contact-name" onclick="contact_ram()">
+                <div class="contact-name-up">Lord Ram</div>
+                <div class="contact-name-down"></div>
+            </div>
+        </div>
+        <div class="contact-section">
+            <div class="contact-logo durga-pic">
+                <div class="rk-pic"><img src="file/ma durga.jpg" alt=""></div></div>
+            <div class="contact-name" onclick="contact_durga()">
+                <div class="contact-name-up">Ma Durga</div>
+                <div class="contact-name-down">Jay Mata di</div>
+            </div>
+        </div>
+        <div class="contact-section">
+            <div class="contact-logo hanuman-pic">
+                <div class="rk-pic"><img src="file/hanuman ji.png" alt=""></div></div>
+            <div class="contact-name" onclick="contact_hanuman()">
+                <div class="contact-name-up">Hanuman</div>
+                <div class="contact-name-down">Jay Shree Ram</div>
+            </div>
+        </div>
+        <div class="contact-section">
+            <div class="contact-logo lakshaman-pic">
+                <div class="rk-pic"><img src="file/lakshaman ji.jpg" alt=""></div></div>
+            <div class="contact-name" onclick="contact_lakshaman()">
+                <div class="contact-name-up">Lakshaman</div>
+                <div class="contact-name-down">Jay Shree Ram</div>
+            </div>
+        </div>
+        <div class="contact-section">
+            <div class="contact-logo shiva-pic">
+                <div class="rk-pic"><img src="file/lord shiva.png" alt=""></div></div>
+            <div class="contact-name" onclick="contact_shiv()">
+                <div class="contact-name-up">Lord Shiv</div>
+                <div class="contact-name-down">Ohmm</div>
+            </div>
+        </div>
+        <div class="contact-section">
+            <div class="contact-logo lakshami=pic">
+                <div class="rk-pic"><img src="file/lakshami jii.jpg" alt=""></div></div>
+            <div class="contact-name" onclick="contact_lakshami()">
+                <div class="contact-name-up">Lakshami</div>
+                <div class="contact-name-down">Jay mata di</div>
+            </div>
+        </div>
+        <div class="contact-section">
+            <div class="contact-logo">
+                <div class="rk-pic"><img src="file/krishana ji.jpg" alt=""></div></div>
+            <div class="contact-name" onclick="contact_krishana()">
+                <div class="contact-name-up">Lord Krishna</div>
+                <div class="contact-name-down">Radhe Radhe</div>
+            </div>
+        </div>
+        <br><br><br>
+        
+
+    </div>
+    <!-- updates  -->
+    <div class="home" hidden>
+        <div class="home-nav" id="updates-nav">
+            <div class="logo">Whatsapp</div>
+            <div class="home-nav-icon-main">
+                <div class="home-nav-icon" onclick=""><i class="fa-solid fa-camera"></i></div>
+                <div class="home-nav-icon" onclick="updates_searchtoggle()"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="home-nav-icon" onclick="updates_moretoggle()"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </div>
+
+        </div>
+        <div class="updates-search">
+            <div class="chat-search-top">
+                <div class="chat-search-backicon" onclick="updates_searchtoggle()"><i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <input type="search" placeholder="search....">
+            </div>
+        </div>
+        <div class="updates-more">
+            <div class="chat-contant-main">
+                <div class="chat-contant" onclick="updates_moretoggle()">Setting</div>
+                <div class="chat-contant" onclick="updates_moretoggle()">Switch Accounts</div>
+            </div>
+        </div>
+        <div class="add-btn1"><i class="fa-solid fa-pencil"></i></div>
+        <div class="add-btn"><i class="fa-solid fa-plus"></i></div>
+        <div class="main1">
+            <h2>Status</h2>
+            <div class="satus-section">
+                <div class="my-status">
+                    <div class="span-section">My Status</div>
+                </div>
+                <div class="my-status">
+                    <div class="span-section">Bhai</div>
+                </div>
+                <div class="my-status">
+                    <div class="span-section">Jigari</div>
+                </div>
+                <div class="my-status">
+                    <div class="span-section">Raja</div>
+                </div>
+            </div>
+            <hr>
+            <div class="channel-section">
+                <div class="channel-sec-left">Channels</div>
+                <div class="channel-sec-right">Explore</div>
+            </div>
+            <div class="main2">
+                <div class="main-div">
+                    <div class="main-div-left">
+                        <div class="rk-pic"><img src="file/js.png" alt=""></div>
+                    </div>
+                    <div class="main-div-right">
+                        <div class="main-div-right-top">
+                            <h3>Learn Java script</h3>
+                            <span>yesterday</span>
+                        </div>
+                        <div class="main-div-right-down">
+                            <span></span>
+                            <p> This clone was created by raja yadav...</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="main-div">
+                    <div class="main-div-left">
+                        <div class="rk-pic"><img src="file/js.png" alt=""></div>
+                    </div>
+                    <div class="main-div-right">
+                        <div class="main-div-right-top">
+                            <h3>Java Script Tutorial</h3>
+                            <span>10:35 PM</span>
+                        </div>
+                        <div class="main-div-right-down">
+                            <span></span>
+                            <p> This clone was created by raja yadav...</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="main-div">
+                    <div class="main-div-left">
+                        <div class="rk-pic"><img src="file/html.png" alt=""></div>
+                    </div>
+                    <div class="main-div-right">
+                        <div class="main-div-right-top">
+                            <h3>Html Learn</h3>
+                            <span>online</span>
+                        </div>
+                        <div class="main-div-right-down">
+                            <span></span>
+                            <p> This clone was created by raja yadav...</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="main-div">
+                    <div class="main-div-left">
+                        <div class="rk-pic"><img src="file/html css js.png" alt=""></div>
+                    </div>
+                    <div class="main-div-right">
+                        <div class="main-div-right-top">
+                            <h3>Project Hub</h3>
+                            <span>6 day ago</span>
+                        </div>
+                        <div class="main-div-right-down">
+                            <span></span>
+                            <p> This clone was created by raja yadav...</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="main-div">
+                    <div class="main-div-left">
+                        <div class="rk-pic"><img src="file/html.png" alt=""></div>
+                    </div>
+                    <div class="main-div-right">
+                        <div class="main-div-right-top">
+                            <h3>HTML & CSS</h3>
+                            <span>yesterday</span>
+                        </div>
+                        <div class="main-div-right-down">
+                            <span></span>
+                            <p> This clone was created by raja yadav...</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="main-div">
+                    <div class="main-div-left">
+                        <div class="rk-pic"><img src="file/java.png" alt=""></div>
+                    </div>
+                    <div class="main-div-right">
+                        <div class="main-div-right-top">
+                            <h3>learn Java</h3>
+                            <span>3 mint ago</span>
+                        </div>
+                        <div class="main-div-right-down">
+                            <span></span>
+                            <p> This clone was created by raja yadav...</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="main-div">
+                    <div class="main-div-left">
+                        <div class="rk-pic"><img src="file/html css js.png" alt=""></div>
+                    </div>
+                    <div class="main-div-right">
+                        <div class="main-div-right-top">
+                            <h3>front End Project</h3>
+                            <span>02:00 PM </span>
+                        </div>
+                        <div class="main-div-right-down">
+                            <span></span>
+                            <p> This clone was created by raja yadav...</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="main-div">
+                    <div class="main-div-left">
+                        <div class="rk-pic"><img src="file/html css js.png" alt=""></div>
+                    </div>
+                    <div class="main-div-right">
+                        <div class="main-div-right-top">
+                            <h3>Html, Css, JavaScript FILE</h3>
+                            <span>07:00 AM </span>
+                        </div>
+                        <div class="main-div-right-down">
+                            <span></span>
+                            <p> This clone was created by raja yadav...</p>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- group -->
+    <div class="home" hidden>
+        <div class="home-nav">
+            <div class="logo">Whatsapp</div>
+            <div class="home-nav-icon-main">
+                <div class="home-nav-icon" onclick=""><i class="fa-solid fa-camera"></i></div>
+                <!-- <div class="home-nav-icon" onclick="chat_search()"><i class="fa-solid fa-magnifying-glass"></i></div> -->
+                <div class="home-nav-icon" onclick="Group_moretoggle()"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </div>
+
+        </div>
+        <div class="group_more">
+            <div class="chat-contant-main">
+                <div class="chat-contant" onclick="Group_moretoggle()">Setting</div>
+                <div class="chat-contant" onclick="Group_moretoggle()">Switch Accounts</div>
+            </div>
+        </div>
+        <div class="main1 main10">
+            <div class="logo-icon-main">
+                <div class="logo-icon-group"><i class="fa-solid fa-people-group"></i></div>
+            </div>
+            <h1>Stay Connected With a Community</h1>
+            <p>Communitiesbrings memory together in topic-basd groups, and make it easy to get admin annoucements. Any community you're added to will apear here</p>
+            <span><a href="">See Example communities</a></span>
+            <div class="communities">Start Your Communities</div>
+        </div>
+    </div>
+    <!-- calls  -->
+    <div class="home" hidden>
+        <div class="home-nav">
+            <div class="logo">Whatsapp</div>
+            <div class="home-nav-icon-main">
+                <div class="home-nav-icon" onclick=""><i class="fa-solid fa-camera"></i></div>
+                <div class="home-nav-icon" onclick="calls_searchtoggle()"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="home-nav-icon" onclick="calls_moretoggle()"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </div>
+
+        </div>
+        <div class="calls-search">
+            <div class="chat-search-top">
+                <div class="chat-search-backicon" onclick="calls_searchtoggle()"><i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <input type="search" placeholder="search....">
+            </div>
+        </div>
+        <div class="calls-more">
+            <div class="chat-contant-main">
+                <div class="chat-contant" onclick="calls_moretoggle()">Clear all Logs</div>
+                <div class="chat-contant" onclick="calls_moretoggle()">Setting</div>
+                <div class="chat-contant" onclick="calls_moretoggle()">Switch Accounts</div>
+            </div>
+        </div>
+        <div class="add-btn"><i class="fa-solid fa-plus"></i></div>
+        <div class="main">
+            <div class="create-link">
+                <div class="link-left"><i class="fa-solid fa-link"></i></div>
+                <div class="link-right">
+                    <div class="link-right-top">Create Call link</div>
+                    <div class="link-right-down">share a link for your Whatsapp call</div>
+                </div>
+            </div>
+            <div class="recent">Recent</div>
+            <div class="call-his">
+                <div class="call-left">
+                    <div class="rk-pic"><img src="file/ram ji.jpg" alt=""></div></div>
+                <div class="call-center">
+                    <div class="link-right-top">Ram</div>
+                    <div class="link-right-down">10 minut ago</div>
+
+                </div>
+                <div class="call-right"><i class="fa-solid fa-video"></i></div>
+            </div>
+            <div class="call-his">
+                <div class="call-left">
+                    <div class="rk-pic"><img src="file/" alt=""></div></div>
+                <div class="call-center">
+                    <div class="link-right-top">papa</div>
+                    <div class="link-right-down">10 minut ago</div>
+
+                </div>
+                <div class="call-right" value="play" onclick="audiocalltoggle_papa()"><i class="fa-solid fa-phone"></i></div>
+            </div>
+            <div class="call-his">
+                <div class="call-left">
+                    <div class="rk-pic"><img src="file/ram ji.jpg" alt=""></div></div>
+                <div class="call-center">
+                    <div class="link-right-top">Lord Ram</div>
+                    <div class="link-right-down">10 minut ago</div>
+
+                </div>
+                <div class="call-right" onclick="audiocalltoggle_ram()"><i class="fa-solid fa-phone"></i></div>
+            </div>
+            <div class="call-his">
+                <div class="call-left">
+                    <div class="rk-pic"><img src="file/ma durga.jpg" alt=""></div></div>
+                <div class="call-center">
+                    <div class="link-right-top">Ma Durga</div>
+                    <div class="link-right-down">10 minut ago</div>
+
+                </div>
+                <div class="call-right" onclick="audiocalltoggle_durga()"><i class="fa-solid fa-phone"></i></div>
+            </div>
+            <div class="call-his">
+                <div class="call-left">
+                    <div class="rk-pic"><img src="file/hanuman ji.png" alt=""></div></div>
+                <div class="call-center">
+                    <div class="link-right-top">Hanuman</div>
+                    <div class="link-right-down">10 minut ago</div>
+
+                </div>
+                <div class="call-right" onclick="audiocalltoggle_hanuman()"><i class="fa-solid fa-phone"></i></div>
+            </div>
+            <div class="call-his">
+                <div class="call-left">
+                    <div class="rk-pic"><img src="file/lakshaman ji.jpg" alt=""></div></div>
+                <div class="call-center">
+                    <div class="link-right-top">Lakshaman</div>
+                    <div class="link-right-down">10 minut ago</div>
+
+                </div>
+                <div class="call-right" onclick="audiocalltoggle_lakhan()"><i class="fa-solid fa-phone"></i></div>
+            </div>
+            <div class="call-his">
+                <div class="call-left">
+                    <div class="rk-pic"><img src="file/lord shiva.png" alt=""></div></div>
+                <div class="call-center">
+                    <div class="link-right-top">Lord Shiv</div>
+                    <div class="link-right-down">10 minut ago</div>
+
+                </div>
+                <div class="call-right" onclick="audiocalltoggle_Shiv()"><i class="fa-solid fa-phone"></i></div>
+            </div>
+            <div class="call-his">
+                <div class="call-left">
+                    <div class="rk-pic"><img src="file/lakshami jii.jpg" alt=""></div></div>
+                <div class="call-center">
+                    <div class="link-right-top"> Ma Lakshmi</div>
+                    <div class="link-right-down">10 minut ago</div>
+
+                </div>
+                <div class="call-right" onclick="audiocalltoggle_Lakshmi()"><i class="fa-solid fa-phone"></i></div>
+            </div>
+            <div class="call-his">
+                <div class="call-left">
+                    <div class="rk-pic"><img src="file/krishana ji.jpg" alt=""></div></div>
+                <div class="call-center">
+                    <div class="link-right-top">Lord Krishna</div>
+                    <div class="link-right-down">10 minut ago</div>
+
+                </div>
+                <div class="call-right" onclick="audiocalltoggle_krishna()"><i class="fa-solid fa-phone"></i></div>
+            </div>
+
+            
+           
+            <div class="end-to-end">
+                <i class="fa-solid fa-lock"></i>  your personal call are <div class="e-t-e">end-to-end encrypted</div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <!-- call page (audio) -->
+    <div class="audio-call-ram">
+        <div class="audio-call-top">
+            <div class="audio-end-to"><i class="fa-solid fa-lock"></i> end-to-end encrypted</div>
+            <div class="audio-plus"><i class="fa-solid fa-user-plus"></i></div>
+        </div>
+        <div class="audio-logo"></div>
+        <div id="audion-name"></div>
+        <div id="audio-calling">Calling</div>
+        <div class="audio-five">
+            <div class="audio-one"><i class="fa-solid fa-volume-high"></i></div>
+            <div class="audio-one"><i class="fa-brands fa-bluetooth-b"></i></div>
+            <div class="audio-one"><i class="fa-solid fa-video"></i></div>
+            <div class="audio-one"><i class="fa-solid fa-microphone-slash"></i></div>
+            <div class="audio-one audio-one1" onclick="callcut()"><i class="fa-solid fa-phone"></i></div>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="home-btn navbar-font" onclick="homebtn()">
+            <div class="nav-icon nav-icon-bg"><i class="fa-solid fa-envelope"></i></div>
+            <p>Chats</p>
+        </div>
+        <div class="home-btn  " onclick="updatesbtn()">
+            <div class="nav-icon "><i class="fa-solid fa-face-smile"></i></div>
+            <p>Updates</p>
+        </div>
+        <div class="home-btn" onclick="grouptn()">
+            <div class="nav-icon"><i class="fa-solid fa-user-group"></i></div>
+            <p>Communities</p>
+        </div>
+        <div class="home-btn" onclick="callsbtn()">
+            <div class="nav-icon"><i class="fa-solid fa-phone"></i></div>
+            <p>Calls</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
